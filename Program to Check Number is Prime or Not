@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+bool isPrime(int n){
+    bool isPrime = false;
+    int i=2;
+    while(i<n){
+        if (n % i == 0) {
+            isPrime = true;
+            return isPrime;
+        }
+    }
+    return false;
+}
+
+
+
+
+int main() {
+int n=6;
+    if (isPrime(n) == false) {
+        cout<<n<<" is Prime Number"<<endl;
+    }else{
+        cout<<n<<" is NOT Prime Number"<<endl;
+    }
+    return 0;
+}
